@@ -12,7 +12,7 @@ struct ContentView: View {
         NavigationStack {
             VStack {
                 Text("This is the root view 🌳")
-                NavigationLink(destination: Text("You've arrived at the Second View")) {
+                NavigationLink(destination: SecondView()) {
                     Text("Click Me!")
                         .font(.body)
                         .fontWeight(.heavy)
@@ -26,7 +26,9 @@ struct ContentView: View {
                         .foregroundColor(Color.orange)
                 }
             }
-            
+            .navigationTitle("Home")
+            .navigationBarTitleDisplayMode(.inline)
+            .navigationBarHidden(true)
         }
         
     }
