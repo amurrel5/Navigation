@@ -14,7 +14,16 @@ struct ContentView: View {
                 Text("This is the root view 🌳")
                 NavigationLink(destination: Text("You've arrived at the Second View")) {
                     Text("Click Me!")
+                        .font(.body)
+                        .fontWeight(.heavy)
+                        .foregroundColor(Color.green)
                     
+                }
+                NavigationLink(destination: Text ("You've arrived at the Third View")) {
+                    Text("Press Here.")
+                        .font(.body)
+                        .fontWeight(.heavy)
+                        .foregroundColor(Color.orange)
                 }
             }
             
