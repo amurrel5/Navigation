@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct Home: View {
     var body: some View {
         NavigationStack {
             VStack {
@@ -19,7 +19,10 @@ struct ContentView: View {
                         .foregroundColor(Color.green)
                     
                 }
-                NavigationLink(destination: Text ("You've arrived at the Third View")) {
+                NavigationLink(destination: Text ("Hooray 🥳!")
+                    .font(.largeTitle)
+                    .fontWeight(.heavy)
+                    .foregroundColor(Color.orange)) {
                     Text("Press Here.")
                         .font(.body)
                         .fontWeight(.heavy)
@@ -35,5 +38,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    Home()
 }
